@@ -34,10 +34,13 @@ import { w } from '@dojo/widget-core/d';
 w(Toolbar, {
 	title: 'My Site',
 	fixed: true,
-	collapseWidth: 720
+	collapseWidth: 720,
+	actions: [
+        	v('a', { href: '/#home' }, [ 'Home' ]),
+        	v('a', { href: '/#about' }, [ 'About' ]),
+        	v('a', { href: '/#contact' }, [ 'Contact' ])
+	]
 }, [
-	v('a', { href: '/#home' }, [ 'Home' ]),
-	v('a', { href: '/#about' }, [ 'About' ]),
-	v('a', { href: '/#contact' }, [ 'Contact' ])
+	v('p', [ 'Some content' ])
 ])
 ```
